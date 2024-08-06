@@ -1,0 +1,53 @@
+********************************************
+Password Complexity Checker Documentation
+********************************************
+
+Overview
+    This Password Complexity Checker assesses the strength of a password based on criteria such as length, presence of uppercase and lowercase letters, numbers, and special characters. It provides feedback to users on the password's strength and suggestions for improvement.
+
+Functions
+    check_password_strength(password)
+    Assesses the strength of a password based on predefined criteria and provides feedback.
+
+Parameters:
+
+    password (str): The password to be assessed.
+Returns:
+
+    str: A message indicating the password strength.
+    str: Feedback on missing criteria to improve the password strength.
+Details:
+
+    The function checks if the password meets each of the following criteria:
+    At least 8 characters long.
+    Contains at least one uppercase letter.
+    Contains at least one lowercase letter.
+    Contains at least one digit.
+    Contains at least one special character.
+    The function calculates a score based on the number of criteria met.
+    It provides a strength level (Very Weak, Weak, Moderate, Strong, Very Strong) based on the score.
+    It gives feedback on which criteria are missing, if any.
+    main()
+    Handles user interaction, allowing them to input a password, check its strength, and receive feedback.
+
+Flow:
+
+    Welcomes the user and prompts them to enter a password.
+    Calls check_password_strength to assess the password and provides feedback.
+    Continues to offer password checking until the user decides to quit.
+Parameters:
+
+    None
+Returns:
+
+    None
+Usage
+    Run the program.
+    Enter a password to check its strength.
+    Receive feedback on the password's strength and suggestions for improvement.
+    Optionally, choose to check another password or exit the program.
+
+Dependencies
+    re: Regular expression library for pattern matching.
+Installation
+    No additional libraries are needed as re is part of the Python Standard Library.
